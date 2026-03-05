@@ -1,6 +1,33 @@
 (function () {
   'use strict';
 
+  function setTheme(themeName) {
+    document.body.className = themeName || 'theme-premium';
+    document.querySelectorAll('.theme-switcher .btn-theme').forEach(function (btn) {
+      btn.classList.toggle('active', btn.getAttribute('data-theme') === themeName);
+    });
+    try {
+      localStorage.setItem('theme', themeName);
+    } catch (e) {}
+  }
+
+  window.setTheme = setTheme;
+
+  var savedTheme = null;
+  try {
+    savedTheme = localStorage.getItem('theme');
+  } catch (e) {}
+  if (savedTheme && /^theme-(premium|modern|clean)$/.test(savedTheme)) {
+    setTheme(savedTheme);
+  }
+
+  document.querySelectorAll('.theme-switcher .btn-theme').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var theme = btn.getAttribute('data-theme');
+      if (theme) setTheme(theme);
+    });
+  });
+
   var WHATSAPP_NUMBER = '5547999999999';
   var DEFAULT_MESSAGE = 'Olá, vim pelo site e gostaria de falar com um advogado.';
 
