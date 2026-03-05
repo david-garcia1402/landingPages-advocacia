@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advogado em Joinville | Consultoria Jurídica Especializada</title>
+  <meta name="description" content="Escritório de advocacia especializado em diversas áreas do direito. Atendimento profissional e estratégico.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a href="#main" class="skip-link">Ir para o conteúdo</a>
+
+  <header class="header" id="header">
+    <div class="container header-inner">
+      <a href="#" class="logo">
+        <img src="imgs/logo.svg" alt="Logo do escritório" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline';">
+        <span class="logo-text">Silva &amp; Advogados</span>
+      </a>
+      <button type="button" class="nav-toggle" aria-label="Abrir menu" aria-expanded="false" id="navToggle">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav" id="nav">
+        <ul class="nav-list">
+          <li><a href="#inicio" class="nav-link">Início</a></li>
+          <li><a href="#sobre" class="nav-link">Sobre</a></li>
+          <li><a href="#areas" class="nav-link">Áreas de atuação</a></li>
+          <li><a href="#depoimentos" class="nav-link">Depoimentos</a></li>
+          <li><a href="#contato" class="nav-link">Contato</a></li>
+        </ul>
+        <a href="#" class="btn btn-cta-header" onclick="sendToWhatsApp('Olá, vim pelo site e gostaria de falar com um advogado.'); return false;">Fale com um advogado</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section id="inicio" class="hero">
+      <div class="hero-bg"></div>
+      <div class="container hero-inner">
+        <div class="hero-content scroll-reveal">
+          <h1 class="hero-title">Defesa jurídica estratégica e atendimento personalizado</h1>
+          <p class="hero-subtitle">Especialistas em Direito Trabalhista, Civil e Empresarial oferecendo suporte jurídico com ética, transparência e experiência.</p>
+          <div class="hero-buttons">
+            <a href="#" class="btn btn-primary" onclick="sendToWhatsApp('Olá, vim pelo site e gostaria de falar com um advogado.'); return false;">Falar no WhatsApp</a>
+            <a href="#consulta" class="btn btn-secondary">Agendar consulta</a>
+          </div>
+        </div>
+        <div class="hero-image-wrap scroll-reveal">
+          <img src="imgs/hero.jpg" alt="Ambiente profissional do escritório de advocacia" class="hero-image">
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre" class="section sobre">
+      <div class="container">
+        <div class="sobre-grid">
+          <div class="sobre-content scroll-reveal">
+            <h2 class="section-title">Sobre o escritório</h2>
+            <p class="sobre-text">Fundado com o compromisso de oferecer assessoria jurídica de excelência, nosso escritório atua há anos em Joinville e região, construindo uma trajetória baseada em resultados e na confiança dos clientes.</p>
+            <h3 class="sobre-subtitle">Missão</h3>
+            <p class="sobre-text">Prestar consultoria e representação jurídica com profissionalismo, defendendo os interesses dos clientes com estratégia e transparência.</p>
+            <h3 class="sobre-subtitle">Valores</h3>
+            <ul class="sobre-valores">
+              <li>Ética e sigilo</li>
+              <li>Compromisso com resultados</li>
+              <li>Comunicação clara</li>
+              <li>Respeito ao cliente</li>
+            </ul>
+            <div class="sobre-stats">
+              <div class="stat">
+                <span class="stat-number" data-target="15">0</span>
+                <span class="stat-label">Anos de experiência</span>
+              </div>
+              <div class="stat">
+                <span class="stat-number" data-target="1200">0</span>
+                <span class="stat-label">Casos atendidos</span>
+              </div>
+              <div class="stat">
+                <span class="stat-label">Especialização</span>
+                <span class="stat-text">Multiáreas</span>
+              </div>
+            </div>
+          </div>
+          <div class="sobre-photo scroll-reveal">
+            <img src="imgs/advogado.jpg" alt="Advogado responsável do escritório">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="areas" class="section areas">
+      <div class="container">
+        <h2 class="section-title text-center">Áreas de atuação</h2>
+        <p class="section-subtitle text-center">Atuamos nas principais áreas do direito com expertise e dedicação.</p>
+        <div class="areas-grid">
+          <article class="area-card scroll-reveal">
+            <div class="area-icon">⚖️</div>
+            <h3 class="area-name">Direito Trabalhista</h3>
+            <p class="area-desc">Defesa dos direitos do trabalhador, rescisões, verbas rescisórias e ações trabalhistas.</p>
+            <a href="#" class="btn btn-outline" onclick="sendToWhatsApp('Olá, tenho interesse em Direito Trabalhista.'); return false;">Saiba mais</a>
+          </article>
+          <article class="area-card scroll-reveal">
+            <div class="area-icon">📋</div>
+            <h3 class="area-name">Direito Previdenciário</h3>
+            <p class="area-desc">Aposentadorias, benefícios, revisões e planejamento previdenciário.</p>
+            <a href="#" class="btn btn-outline" onclick="sendToWhatsApp('Olá, tenho interesse em Direito Previdenciário.'); return false;">Saiba mais</a>
+          </article>
+          <article class="area-card scroll-reveal">
+            <div class="area-icon">📜</div>
+            <h3 class="area-name">Direito Civil</h3>
+            <p class="area-desc">Contratos, indenizações, responsabilidade civil e questões patrimoniais.</p>
+            <a href="#" class="btn btn-outline" onclick="sendToWhatsApp('Olá, tenho interesse em Direito Civil.'); return false;">Saiba mais</a>
+          </article>
+          <article class="area-card scroll-reveal">
+            <div class="area-icon">🏢</div>
+            <h3 class="area-name">Direito Empresarial</h3>
+            <p class="area-desc">Sociedades, contratos empresariais, recuperação e compliance.</p>
+            <a href="#" class="btn btn-outline" onclick="sendToWhatsApp('Olá, tenho interesse em Direito Empresarial.'); return false;">Saiba mais</a>
+          </article>
+          <article class="area-card scroll-reveal">
+            <div class="area-icon">👨‍👩‍👧</div>
+            <h3 class="area-name">Direito de Família</h3>
+            <p class="area-desc">Divórcio, guarda, pensão alimentícia, inventário e planejamento sucessório.</p>
+            <a href="#" class="btn btn-outline" onclick="sendToWhatsApp('Olá, tenho interesse em Direito de Família.'); return false;">Saiba mais</a>
+          </article>
+          <article class="area-card scroll-reveal">
+            <div class="area-icon">🛒</div>
+            <h3 class="area-name">Direito do Consumidor</h3>
+            <p class="area-desc">Proteção ao consumidor, indenizações e relações de consumo.</p>
+            <a href="#" class="btn btn-outline" onclick="sendToWhatsApp('Olá, tenho interesse em Direito do Consumidor.'); return false;">Saiba mais</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section diferenciais">
+      <div class="container">
+        <h2 class="section-title text-center">Diferenciais do escritório</h2>
+        <div class="diferenciais-grid">
+          <div class="diferencial scroll-reveal">
+            <div class="diferencial-icon">👤</div>
+            <h3 class="diferencial-title">Atendimento personalizado</h3>
+            <p class="diferencial-desc">Cada caso é único. Oferecemos acompanhamento próximo e dedicado.</p>
+          </div>
+          <div class="diferencial scroll-reveal">
+            <div class="diferencial-icon">🔍</div>
+            <h3 class="diferencial-title">Análise detalhada do caso</h3>
+            <p class="diferencial-desc">Estudo completo da situação para definir a melhor estratégia jurídica.</p>
+          </div>
+          <div class="diferencial scroll-reveal">
+            <div class="diferencial-icon">📢</div>
+            <h3 class="diferencial-title">Transparência no processo</h3>
+            <p class="diferencial-desc">Informações claras sobre prazos, custos e andamento do processo.</p>
+          </div>
+          <div class="diferencial scroll-reveal">
+            <div class="diferencial-icon">🎯</div>
+            <h3 class="diferencial-title">Compromisso com resultados</h3>
+            <p class="diferencial-desc">Foco na solução mais adequada para os seus objetivos.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="depoimentos" class="section depoimentos">
+      <div class="container">
+        <h2 class="section-title text-center">Depoimentos de clientes</h2>
+        <p class="section-subtitle text-center">A opinião de quem confiou no nosso trabalho.</p>
+        <div class="depoimentos-grid">
+          <blockquote class="depoimento-card scroll-reveal">
+            <div class="depoimento-stars">★★★★★</div>
+            <p class="depoimento-text">"Excelente atendimento. O advogado foi muito claro e conseguiu resolver meu caso trabalhista com agilidade."</p>
+            <footer class="depoimento-author">
+              <strong>Maria F.</strong>
+              <span>Cliente - Direito Trabalhista</span>
+            </footer>
+          </blockquote>
+          <blockquote class="depoimento-card scroll-reveal">
+            <div class="depoimento-stars">★★★★★</div>
+            <p class="depoimento-text">"Profissionalismo e transparência em todo o processo. Recomendo o escritório."</p>
+            <footer class="depoimento-author">
+              <strong>Carlos R.</strong>
+              <span>Cliente - Direito Civil</span>
+            </footer>
+          </blockquote>
+          <blockquote class="depoimento-card scroll-reveal">
+            <div class="depoimento-stars">★★★★★</div>
+            <p class="depoimento-text">"Atendimento humanizado e resultados. Minha aposentadoria foi concedida graças ao trabalho dedicado."</p>
+            <footer class="depoimento-author">
+              <strong>Ana L.</strong>
+              <span>Cliente - Direito Previdenciário</span>
+            </footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section id="consulta" class="section consulta">
+      <div class="container">
+        <div class="consulta-inner">
+          <div class="consulta-info scroll-reveal">
+            <h2 class="section-title">Solicite uma análise do seu caso</h2>
+            <p>Preencha o formulário e retornaremos em breve para agendar uma consulta ou tirar suas dúvidas.</p>
+            <p>Você também pode falar diretamente pelo WhatsApp.</p>
+            <a href="#" class="btn btn-primary" onclick="sendToWhatsApp('Olá, vim pelo site e gostaria de agendar uma consulta para análise do meu caso.'); return false;">Falar no WhatsApp</a>
+          </div>
+          <form class="form-consulta scroll-reveal" id="formConsulta" action="form-handler.php" method="post">
+            <div class="form-group">
+              <label for="nome">Nome</label>
+              <input type="text" id="nome" name="nome" required placeholder="Seu nome completo">
+            </div>
+            <div class="form-group">
+              <label for="telefone">Telefone</label>
+              <input type="tel" id="telefone" name="telefone" required placeholder="(00) 00000-0000">
+            </div>
+            <div class="form-group">
+              <label for="area">Área do caso</label>
+              <select id="area" name="area" required>
+                <option value="">Selecione</option>
+                <option value="trabalhista">Direito Trabalhista</option>
+                <option value="previdenciario">Direito Previdenciário</option>
+                <option value="civil">Direito Civil</option>
+                <option value="empresarial">Direito Empresarial</option>
+                <option value="familia">Direito de Família</option>
+                <option value="consumidor">Direito do Consumidor</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="mensagem">Mensagem</label>
+              <textarea id="mensagem" name="mensagem" rows="4" placeholder="Descreva brevemente sua situação"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Solicitar análise do caso</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section id="localizacao" class="section localizacao">
+      <div class="container">
+        <h2 class="section-title text-center">Localização</h2>
+        <p class="section-subtitle text-center">Escritório localizado em Joinville - SC</p>
+        <div class="map-wrap scroll-reveal">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3578.65!2d-48.8456!3d-26.3044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94deb0b2b2d0e0a1%3A0x9e9e9e9e!2sJoinville%2C%20SC!5e0!3m2!1spt-BR!2sbr!4v1600000000000!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Localização do escritório em Joinville - SC"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section id="cta-final" class="section cta-final">
+      <div class="container">
+        <div class="cta-final-inner scroll-reveal">
+          <h2 class="cta-final-title">Precisa de orientação jurídica?</h2>
+          <a href="#" class="btn btn-cta-large" onclick="sendToWhatsApp('Olá, vim pelo site e gostaria de falar com um advogado agora.'); return false;">Falar com um advogado agora</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contato" class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <strong class="footer-logo">Silva &amp; Advogados</strong>
+          <p>Escritório de advocacia em Joinville - SC</p>
+        </div>
+        <div class="footer-col">
+          <h4>Contato</h4>
+          <p>Rua das Palmeiras, 500 – Centro<br>Joinville – SC</p>
+          <p><a href="tel:+554734000000">(47) 3400-0000</a></p>
+          <p><a href="mailto:contato@escritorio.com.br">contato@escritorio.com.br</a></p>
+        </div>
+        <div class="footer-col">
+          <h4>Horário de atendimento</h4>
+          <p>Segunda a sexta: 8h às 18h<br>Sábado: 8h às 12h</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> Silva &amp; Advogados. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" class="whatsapp-float" aria-label="Falar no WhatsApp" onclick="sendToWhatsApp('Olá, vim pelo site e gostaria de falar com um advogado.'); return false;">
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    <span>WhatsApp</span>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>

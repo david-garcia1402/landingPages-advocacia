@@ -1,0 +1,15 @@
+CREATE DATABASE IF NOT EXISTS landing_advocacia
+  DEFAULT CHARACTER SET utf8mb4
+  DEFAULT COLLATE utf8mb4_unicode_ci;
+
+USE landing_advocacia;
+
+CREATE TABLE IF NOT EXISTS consultas (
+  id INT UNSIGNED NOT NULL AUTO_INCREMENT,
+  nome VARCHAR(255) NOT NULL,
+  telefone VARCHAR(50) NOT NULL,
+  area VARCHAR(100) NOT NULL,
+  mensagem TEXT,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (id)
+);
